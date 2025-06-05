@@ -1,0 +1,9 @@
+{
+  "project": "sitio_web_roger",
+  "type": "sitio_web_basico",
+  "stack": ["HTML", "CSS", "JavaScript"],
+  "git": true,
+  "siteDots": true,
+  "owner": "Nathy José Williams",
+  "intent": "Desarrollar sitio minimalista para Roger con retroalimentación visual y colaboración AI-humana"
+}
