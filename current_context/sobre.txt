@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sobre Nosotros - Roger</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="sobre.html">Sobre Nosotros</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+    <h1>🌱 Sobre Nosotros</h1>
+    <p>Este proyecto nace de la visión de Roger, con el apoyo técnico de Nathy, para compartir soluciones alineadas con el bienestar y la ecología.</p>
+    <footer>
+      <p>&copy; 2025 - Desarrollado con 💚 por Roger & Nathy</p>
+    </footer>
+  </div>
+</body>
+</html>

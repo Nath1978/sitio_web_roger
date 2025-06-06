@@ -1,9 +1,32 @@
 {
-  "project": "sitio_web_roger",
-  "type": "sitio_web_basico",
-  "stack": ["HTML", "CSS", "JavaScript"],
-  "git": true,
-  "siteDots": true,
-  "owner": "Nathy José Williams",
-  "intent": "Desarrollar sitio minimalista para Roger con retroalimentación visual y colaboración AI-humana"
+  "client": {
+    "name": "Roger",
+    "profession": "Arquitecto",
+    "focus": ["Ecológico", "Minimalista"],
+    "brand": {
+      "colors": {
+        "primary": "#4A7C59",
+        "secondary": "#808080",
+        "background": "#FFFFFF"
+      },
+      "style": {
+        "approach": "minimalista",
+        "keywords": ["limpio", "equilibrado", "sostenible"]
+      }
+    }
+  },
+  "website": {
+    "purpose": "Presencia digital profesional para servicios de arquitectura",
+    "pages": {
+      "index": "Página principal",
+      "servicios": "Servicios de arquitectura",
+      "sobre": "Información profesional",
+      "contacto": "Formulario de contacto"
+    },
+    "designRules": {
+      "layout": "centrado",
+      "margins": "amplios",
+      "typography": "limpia y legible"
+    }
+  }
 }

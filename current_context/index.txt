@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arquitectura Sostenible - Roger</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html" class="active">Inicio</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+      <h1>Arquitectura Sostenible y Minimalista</h1>
+    </header>
+    <main>
+      <section class="hero">
+        <h2>Diseñando espacios en armonía con el ambiente</h2>
+        <p>Transformando visiones en espacios sostenibles que respetan nuestro entorno y mejoran la calidad de vida.</p>
+        <a href="servicios.html" class="cta-button">Explorar Servicios</a>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2025 Arquitectura Sostenible - Todos los derechos reservados</p>
+    </footer>
+  </div>
+</body>
+</html>
