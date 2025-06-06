@@ -2,24 +2,68 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <title>Contacto - Roger</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto | Roger Arquitecto</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="container">
-    <nav>
-      <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="servicios.html">Servicios</a></li>
-        <li><a href="sobre.html">Sobre Nosotros</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-      </ul>
-    </nav>
-    <h1>📬 Contacto</h1>
-    <p>Puedes escribirnos a <strong>contacto@rogersitio.com</strong> o dejar tu comentario usando SiteDots.</p>
+    <header>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="portafolio.html">Portafolio</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="testimonios.html">Testimonios</a></li>
+          <li><a href="contacto.html" class="active">Contacto</a></li>
+        </ul>
+      </nav>
+      <h1>📞 Contacto</h1>
+    </header>
+
+    <main>
+      <!-- ====== INFORMACIÓN DE CONTACTO (PLACEHOLDER) ====== -->
+      <section id="info-contacto" class="contact-info">
+        <h2>¿Cómo podemos ayudarte?</h2>
+        <p>Para consultas de proyectos, presupuestos o colaboraciones, utiliza el formulario o los siguientes datos:</p>
+        <ul>
+          <li><strong>Email:</strong> <a href="mailto:info@rogerarquitecto.com">info@rogerarquitecto.com</a></li>
+          <li><strong>Teléfono:</strong> <a href="tel:+50680000000">+506 8000-0000</a></li>
+          <li><strong>Dirección:</strong> San José, Costa Rica (referencia)</li>
+        </ul>
+      </section>
+
+      <!-- ====== FORMULARIO SIMPLE (PLACEHOLDER) ====== -->
+      <section id="form-contacto" class="contact-form">
+        <h2>Envíame un mensaje</h2>
+        <!-- Placeholder form — acción real pendiente de configuración backend/externo -->
+        <form action="#" method="post">
+          <label>Nombre
+            <input type="text" name="nombre" placeholder="Tu nombre" required />
+          </label>
+          <label>Email
+            <input type="email" name="email" placeholder="tu@email.com" required />
+          </label>
+          <label>Mensaje
+            <textarea name="mensaje" rows="5" placeholder="Cuéntame sobre tu proyecto" required></textarea>
+          </label>
+          <button type="submit" class="cta-button">Enviar</button>
+        </form>
+        <p class="form-note">*Formulario a modo de ejemplo. Configura el backend o servicio de correo antes de uso.</p>
+      </section>
+
+      <!-- ====== MAPA (PLACEHOLDER) ====== -->
+      <section id="mapa" class="map-placeholder">
+        <h2>Encuéntrame</h2>
+        <img src="https://via.placeholder.com/800x300?text=Mapa+Ubicaci%C3%B3n" alt="Mapa placeholder" />
+      </section>
+    </main>
+
     <footer>
-      <p>&copy; 2025 - Desarrollado con 💚 por Roger & Nathy</p>
+      <p>&copy; 2025 Roger Arquitecto. Todos los derechos reservados.</p>
     </footer>
   </div>
 </body>
 </html>
+

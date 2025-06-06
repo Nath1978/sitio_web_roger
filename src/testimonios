@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Testimonios | Roger Arquitecto</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="portafolio.html">Portafolio</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="testimonios.html" class="active">Testimonios</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+      <h1>💬 Testimonios</h1>
+    </header>
+
+    <main>
+      <!-- ====== LISTA DE TESTIMONIOS (PLACEHOLDER) ====== -->
+      <section id="testimonios" class="testimonials-list">
+        <blockquote>
+          <p>“Trabajar con Roger fue una experiencia excepcional. Su enfoque sostenible superó nuestras expectativas.”</p>
+          <footer>— Cliente 1</footer>
+        </blockquote>
+        <blockquote>
+          <p>“El diseño minimalista de nuestro nuevo hogar es exactamente lo que buscábamos. ¡Gracias, Roger!”</p>
+          <footer>— Cliente 2</footer>
+        </blockquote>
+        <blockquote>
+          <p>“Profesionalismo y creatividad de la mano; Roger convirtió nuestra visión en realidad.”</p>
+          <footer>— Cliente 3</footer>
+        </blockquote>
+      </section>
+
+      <!-- ====== CTA CONTACTO (PLACEHOLDER) ====== -->
+      <section id="cta-contacto" class="cta-banner">
+        <h2>¿Listo para tu proyecto?</h2>
+        <p>Ponte en contacto y descubramos juntos cómo dar vida a tus ideas.</p>
+        <a href="contacto.html" class="cta-button">Contáctame</a>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Roger Arquitecto. Todos los derechos reservados.</p>
+    </footer>
+  </div>
+</body>
+</html>
