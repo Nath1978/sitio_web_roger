@@ -2,23 +2,70 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <title>Servicios - Roger</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Servicios | Roger Arquitecto</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="container">
-    <nav>
-      <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="servicios.html">Servicios</a></li>
-        <li><a href="sobre.html">Sobre Nosotros</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-      </ul>
-    </nav>
-    <h1>🛠️ Servicios</h1>
-    <p>Próximamente listaremos los servicios que Roger ofrecerá a sus clientes.</p>
+    <header>
+      <nav class="main-nav">
+        <!-- LOGO PLACEHOLDER -->
+        <a href="index.html" class="logo">
+          <img src="assets/logo-placeholder.svg"
+               alt="Logo Roger Arquitecto (placeholder)"
+               width="160" height="48" />
+        </a>
+
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="servicios.html" class="active">Servicios</a></li>
+          <li><a href="portafolio.html">Portafolio</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="testimonios.html">Testimonios</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+      <h1>🛠️ Servicios</h1>
+    </header>
+
+    <main>
+      <!-- ====== LISTADO DE SERVICIOS (PLACEHOLDER) ====== -->
+      <section id="lista-servicios">
+        <h2>¿Qué puedo hacer por ti?</h2>
+        <ul class="service-list">
+          <li>
+            <h3>Diseño Arquitectónico</h3>
+            <p>Conceptualización y desarrollo de planos con un enfoque sostenible y minimalista.</p>
+            <img src="https://via.placeholder.com/600x350?text=Dise%C3%B1o+Arquitect%C3%B3nico" alt="Diseño Arquitectónico placeholder" />
+          </li>
+          <li>
+            <h3>Consultoría de Eficiencia Energética</h3>
+            <p>Análisis y asesoramiento para reducir el consumo energético en edificaciones nuevas o existentes.</p>
+            <img src="https://via.placeholder.com/600x350?text=Consultor%C3%ADa+Energ%C3%A9tica" alt="Consultoría Energética placeholder" />
+          </li>
+          <li>
+            <h3>Remodelaciones Ecológicas</h3>
+            <p>Actualización de espacios con materiales sostenibles y mejoras funcionales.</p>
+            <img src="https://via.placeholder.com/600x350?text=Remodelaciones+Ecol%C3%B3gicas" alt="Remodelaciones Ecológicas placeholder" />
+          </li>
+        </ul>
+      </section>
+
+      <!-- ====== PROCESO DE TRABAJO (PLACEHOLDER) ====== -->
+      <section id="proceso">
+        <h2>Proceso de Diseño</h2>
+        <ol>
+          <li><strong>Etapa 1:</strong> Reunión inicial y levantamiento de requisitos.</li>
+          <li><strong>Etapa 2:</strong> Boceto conceptual y feedback del cliente.</li>
+          <li><strong>Etapa 3:</strong> Desarrollo de planos definitivos y entrega final.</li>
+        </ol>
+        <img src="https://via.placeholder.com/800x200?text=Timeline+Proceso" alt="Proceso de trabajo placeholder" />
+      </section>
+    </main>
+
     <footer>
-      <p>&copy; 2025 - Desarrollado con 💚 por Roger & Nathy</p>
+      <p>&copy; 2025 Roger Arquitecto. Todos los derechos reservados.</p>
     </footer>
   </div>
 </body>

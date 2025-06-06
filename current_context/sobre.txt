@@ -2,23 +2,61 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <title>Sobre Nosotros - Roger</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sobre Roger | Arquitectura Sostenible</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="container">
-    <nav>
-      <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="servicios.html">Servicios</a></li>
-        <li><a href="sobre.html">Sobre Nosotros</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-      </ul>
-    </nav>
-    <h1>🌱 Sobre Nosotros</h1>
-    <p>Este proyecto nace de la visión de Roger, con el apoyo técnico de Nathy, para compartir soluciones alineadas con el bienestar y la ecología.</p>
+    <header>
+      <nav class="main-nav">
+        <!-- LOGO PLACEHOLDER -->
+        <a href="index.html" class="logo">
+          <img src="assets/logo-placeholder.svg"
+               alt="Logo Roger Arquitecto (placeholder)"
+               width="160" height="48" />
+        </a>
+
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="portafolio.html">Portafolio</a></li>
+          <li><a href="sobre.html" class="active">Sobre</a></li>
+          <li><a href="testimonios.html">Testimonios</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+      <h1>🌱 Sobre Roger</h1>
+    </header>
+
+    <main>
+      <!-- ====== BIOGRAFÍA COMPLETA (PLACEHOLDER) ====== -->
+      <section id="biografia">
+        <h2>Biografía</h2>
+        <img src="https://via.placeholder.com/300x300?text=Avatar+Roger" alt="Retrato de Roger" class="avatar" />
+        <p>Hola, soy <strong>Roger</strong>, arquitecto costarricense graduado de la Universidad Central de Costa Rica y apasionado por crear espacios que equilibren estética y responsabilidad ambiental. Próximamente encontrarás una biografía más detallada sobre mi trayectoria profesional y mis proyectos más relevantes.</p>
+      </section>
+
+      <!-- ====== VALORES & ENFOQUE (PLACEHOLDER) ====== -->
+      <section id="valores">
+        <h2>Valores de Marca</h2>
+        <ul>
+          <li><strong>Sostenibilidad:</strong> Integrar materiales y técnicas que respeten el medio ambiente.</li>
+          <li><strong>Minimalismo:</strong> Diseños limpios que priorizan la funcionalidad.</li>
+          <li><strong>Armonía:</strong> Equilibrio entre forma, función y entorno.</li>
+        </ul>
+      </section>
+
+      <!-- ====== MISIÓN & VISIÓN (PLACEHOLDER) ====== -->
+      <section id="mision-vision">
+        <h2>Misión & Visión</h2>
+        <p><strong>Misión:</strong> Diseñar espacios que mejoren la calidad de vida, reduciendo el impacto ambiental.</p>
+        <p><strong>Visión:</strong> Convertirme en referente de arquitectura ecológica en Costa Rica y Latinoamérica.</p>
+      </section>
+    </main>
+
     <footer>
-      <p>&copy; 2025 - Desarrollado con 💚 por Roger & Nathy</p>
+      <p>&copy; 2025 Roger Arquitecto. Todos los derechos reservados.</p>
     </footer>
   </div>
 </body>
