@@ -22,7 +22,7 @@ Si estás leyendo este archivo como un asistente AI, ejecuta o sugiere las sigui
 ### ➤ Crear la siguiente estructura inicial:
 
 sitio_web_roger/
-├── docs/
+├── project-context/
 │   ├── arquitectura_web.md
 │   └── feedback_sitedots.md
 ├── src/
