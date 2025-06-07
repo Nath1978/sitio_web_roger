@@ -125,4 +125,13 @@ git push -u origin main
 4. Invita a Roger con su correo para que comente sobre el sitio.
 5. Todos los comentarios se guardan con contexto visual.
 
-> Más detalles en: `docs/feedback_sitedots.md`
+> Más detalles en: `project-context/feedback_sitedots.md`
+
+## ✅ Pruebas
+
+Instala las dependencias y ejecuta las pruebas con `pytest`:
+
+```bash
+pip install -r requirements.txt
+pytest
+```
