@@ -22,7 +22,7 @@ Si estás leyendo este archivo como un asistente AI, ejecuta o sugiere las sigui
 ### ➤ Crear la siguiente estructura inicial:
 
 sitio_web_roger/
-├── docs/
+├── project-context/
 │   ├── arquitectura_web.md
 │   └── feedback_sitedots.md
 ├── src/
@@ -108,6 +108,15 @@ git commit -m "Estructura inicial del sitio para Roger"
 ```bash
 git remote add origin https://github.com/tu_usuario/sitio_web_roger.git
 git push -u origin main
+```
+
+## 📦 Dependencias y Pruebas
+
+Para instalar las dependencias del proyecto y ejecutar las pruebas automáticas, usa los siguientes comandos:
+
+```bash
+pip install -r requirements.txt
+pytest
 ```
 
 ---
