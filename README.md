@@ -126,3 +126,13 @@ git push -u origin main
 5. Todos los comentarios se guardan con contexto visual.
 
 > Más detalles en: `docs/feedback_sitedots.md`
+
+## ✅ Pruebas
+
+Instala las dependencias y ejecuta las pruebas con `pytest`:
+
+```bash
+pip install -r requirements.txt
+pytest
+```
+
