@@ -110,6 +110,15 @@ git remote add origin https://github.com/tu_usuario/sitio_web_roger.git
 git push -u origin main
 ```
 
+## 📦 Dependencias y Pruebas
+
+Para instalar las dependencias del proyecto y ejecutar las pruebas automáticas, usa los siguientes comandos:
+
+```bash
+pip install -r requirements.txt
+pytest
+```
+
 ---
 
 ## 💬 Retroalimentación con SiteDots
