@@ -295,6 +295,63 @@ footer {
 }
 
 /* =============================
+   CHATBOT
+   ============================= */
+#chatbot-toggle {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: none;
+  background: var(--color-primary);
+  color: #fff;
+  cursor: pointer;
+}
+
+#chatbot-window {
+  position: fixed;
+  bottom: 5rem;
+  right: 1.5rem;
+  width: 260px;
+  max-height: 360px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: var(--radius-sm);
+  display: none;
+  flex-direction: column;
+}
+
+#chatbot-window header {
+  background: var(--color-primary);
+  color: #fff;
+  padding: 0.5rem;
+  font-weight: bold;
+  border-radius: var(--radius-sm) var(--radius-sm) 0 0;
+}
+
+#chatbot-window .messages {
+  flex: 1;
+  overflow-y: auto;
+  padding: 0.5rem;
+}
+
+#chatbot-window form {
+  display: flex;
+  gap: 0.25rem;
+  padding: 0.5rem;
+}
+
+#chatbot-window input {
+  flex: 1;
+  padding: 0.25rem;
+  border: 1px solid #ccc;
+  border-radius: var(--radius-sm);
+  font: inherit;
+}
+
+/* =============================
    RESPONSIVE
    ============================= */
 @media (max-width: 600px) {
