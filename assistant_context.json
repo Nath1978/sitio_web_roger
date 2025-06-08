@@ -1,4 +1,11 @@
 {
+  "project": "sitio_web_roger",
+  "type": "sitio_web_basico",
+  "stack": ["HTML", "CSS", "JavaScript"],
+  "git": true,
+  "siteDots": true,
+  "owner": "Nathy José Williams",
+  "intent": "Desarrollar sitio minimalista para Roger con retroalimentación visual y colaboración AI-humana",
   "client": {
     "name": "Roger",
     "profession": "Arquitecto",
@@ -21,7 +28,9 @@
       "index": "Página principal",
       "servicios": "Servicios de arquitectura",
       "sobre": "Información profesional",
-      "contacto": "Formulario de contacto"
+      "contacto": "Formulario de contacto",
+      "portafolio": "Galería de proyectos",
+      "testimonios": "Comentarios de clientes"
     },
     "designRules": {
       "layout": "centrado",
