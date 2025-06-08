@@ -1,7 +1,11 @@
 {
   "project": "sitio_web_roger",
   "type": "sitio_web_basico",
-  "stack": ["HTML", "CSS", "JavaScript"],
+  "stack": [
+    "HTML",
+    "CSS",
+    "JavaScript"
+  ],
   "git": true,
   "siteDots": true,
   "owner": "Nathy José Williams",
@@ -9,7 +13,10 @@
   "client": {
     "name": "Roger",
     "profession": "Arquitecto",
-    "focus": ["Ecológico", "Minimalista"],
+    "focus": [
+      "Ecológico",
+      "Minimalista"
+    ],
     "brand": {
       "colors": {
         "primary": "#4A7C59",
@@ -18,7 +25,11 @@
       },
       "style": {
         "approach": "minimalista",
-        "keywords": ["limpio", "equilibrado", "sostenible"]
+        "keywords": [
+          "limpio",
+          "equilibrado",
+          "sostenible"
+        ]
       }
     }
   },
@@ -37,5 +48,12 @@
       "margins": "amplios",
       "typography": "limpia y legible"
     }
-  }
+  },
+  "pendingTasks": [
+    "Configurar webhook n8n en docs/scripts.js",
+    "Reemplazar imágenes de placeholder",
+    "Completar contenido final",
+    "Integrar chatbot con backend real",
+    "Pruebas responsive"
+  ]
 }
