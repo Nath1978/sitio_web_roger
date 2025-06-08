@@ -24,7 +24,8 @@ Si estás leyendo este archivo como un asistente AI, ejecuta o sugiere las sigui
 sitio_web_roger/
 ├── project-context/
 │   ├── arquitectura_web.md
-│   └── feedback_sitedots.md
+│   ├── feedback_sitedots.md
+│   └── contexto_general.md
 ├── src/
 │   ├── index.html
 │   ├── style.css
