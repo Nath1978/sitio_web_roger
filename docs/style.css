@@ -27,6 +27,11 @@ body {
   line-height: 1.6;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -361,4 +366,38 @@ footer {
   h2 {
     font-size: 1.5rem;
   }
+  .container {
+    padding: var(--spacing-unit);
+  }
+  nav.main-nav ul {
+    flex-direction: column;
+    gap: var(--spacing-unit);
+  }
+  .contact-form form,
+  .service-list,
+  .grid-preview,
+  .grid-gallery {
+    grid-template-columns: 1fr !important;
+  }
+  .cta-button {
+    width: 100%;
+    text-align: center;
+  }
+  .avatar {
+    width: 180px;
+    height: 180px;
+  }
+  #chatbot-window {
+    width: 90vw;
+    right: 5vw;
+  }
+  .contact-form button,
+  form button {
+    font-size: 1rem;
+    padding: var(--spacing-unit);
+  }
+}
+
+body {
+  overflow-x: hidden;
 }
