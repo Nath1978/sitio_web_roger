@@ -11,7 +11,7 @@ Este proyecto tiene como objetivo desarrollar un sitio web ecológico, elegante 
 - Git y GitHub (control de versiones)
 - SiteDots (retroalimentación visual y colaborativa)
 - PowerShell / Terminal para automatización local
-- Google Sheets y n8n (webhook del chatbot) para integraciones
+- Google Sheets y n8n (formulario y webhook del chatbot) para integraciones
 
 ---
 
@@ -118,6 +118,10 @@ Para instalar las dependencias del proyecto y ejecutar las pruebas automáticas,
 pip install -r requirements.txt
 pytest
 ```
+## ✉️ Envío del formulario a Google Sheets con n8n
+
+Para registrar las consultas del formulario en una hoja de cálculo, crea un flujo en n8n con un nodo **Webhook** y otro de **Google Sheets**. Usa la URL pública generada por el Webhook como valor de la constante `n8nWebhookURL` en `docs/scripts.js`.
+
 
 ---
 
@@ -140,6 +144,4 @@ pytest
 
 ## 🤖 Chatbot con n8n
 
-El chatbot incluido en `/docs/chatbot.js` envía cada mensaje a un webhook de
-n8n para su automatización. Ajusta la constante `N8N_WEBHOOK_URL` en ese
-archivo con la URL de tu flujo en n8n.
+El chatbot incluido en `/docs/chatbot.js` envía cada mensaje a un webhook de n8n para su automatización. Ajusta la constante `N8N_WEBHOOK_URL` en ese archivo con la URL de tu flujo en n8n.
