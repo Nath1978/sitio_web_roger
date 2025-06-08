@@ -401,3 +401,34 @@ footer {
 body {
   overflow-x: hidden;
 }
+/* ===== HAMBURGER MENU ===== */
+#menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: var(--color-primary);
+  cursor: pointer;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+@media (max-width: 768px) {
+  .main-nav ul {
+    display: none;
+    flex-direction: column;
+    background-color: white;
+    padding: var(--spacing-unit);
+    border: 1px solid #eee;
+    margin-top: 3rem;
+  }
+
+  .main-nav ul.active {
+    display: flex;
+  }
+
+  #menu-toggle {
+    display: block;
+  }
+}
