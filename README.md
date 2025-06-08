@@ -119,6 +119,10 @@ pip install -r requirements.txt
 pytest
 ```
 
+## ✉️ Envío del formulario a Google Sheets con n8n
+
+Para registrar las consultas del formulario en una hoja de cálculo, crea un flujo en n8n con un nodo **Webhook** y otro de **Google Sheets**. Usa la URL pública generada por el Webhook como valor de la constante `n8nWebhookURL` en `docs/scripts.js`.
+
 ---
 
 ## 💬 Retroalimentación con SiteDots
