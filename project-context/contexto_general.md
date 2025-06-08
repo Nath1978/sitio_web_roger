@@ -11,7 +11,7 @@ Este proyecto es un sitio web para **Roger**, un arquitecto costarricense que pr
 - Se añadió un widget de chatbot básico (`docs/chatbot.js`).
 
 ## Tareas pendientes
-1. **Configurar la URL real** del webhook en `docs/scripts.js` para registrar los mensajes del formulario en Google Sheets.
+1. **Webhook configurado** en `docs/scripts.js`; el formulario envía los datos a Google Sheets.
 2. **Sustituir imágenes de placeholder** por fotografías reales de proyectos y un logo oficial.
 3. **Completar contenido** en secciones como Portafolio, Sobre mí y Testimonios con textos finales.
 4. **Ajustar estilos** y revisar la apariencia del chatbot para integrarlo mejor con el diseño.

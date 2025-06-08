@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const formSection = document.querySelector('#form-contacto form');
   if (!formSection) return;
 
-  // Reemplaza la URL con la de tu webhook de n8n
+  // URL publica generada por n8n detras de Ngrok
   const n8nWebhookURL =
     'https://humane-asp-smart.ngrok-free.app/webhook/roger-contacto';
 
