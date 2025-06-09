@@ -50,7 +50,7 @@
     }
   },
   "pendingTasks": [
-    "Configurar webhook n8n en docs/scripts.js",
+    "Webhook n8n configurado",
     "Reemplazar imágenes de placeholder",
     "Completar contenido final",
     "Integrar chatbot con backend real",
