@@ -1,6 +1,8 @@
-// chatbot.js - Chat widget placeholder for Roger's site
+// chatbot.js – versión mejorada (sin dependencias externas)
+// Sustituye YOUR_N8N_CHATBOT_WEBHOOK por tu URL real de n8n (método POST JSON).
 
 document.addEventListener('DOMContentLoaded', () => {
+  /* ========= Elementos base ========= */
   const toggleBtn = document.createElement('button');
   toggleBtn.id = 'chatbot-toggle';
   toggleBtn.textContent = '💬';
@@ -12,26 +14,52 @@ document.addEventListener('DOMContentLoaded', () => {
     <header>Chatbot</header>
     <div class="messages"></div>
     <form>
-      <input type="text" placeholder="Escribe un mensaje..." required />
+      <input type="text" placeholder="Escribe un mensaje..." autocomplete="off" required />
     </form>`;
   document.body.appendChild(chatbotWindow);
 
-  toggleBtn.addEventListener('click', () => {
-    chatbotWindow.style.display = chatbotWindow.style.display === 'flex' ? 'none' : 'flex';
-  });
-
-  const form = chatbotWindow.querySelector('form');
-  const input = form.querySelector('input');
+  const form     = chatbotWindow.querySelector('form');
+  const input    = form.querySelector('input');
   const messages = chatbotWindow.querySelector('.messages');
 
-  form.addEventListener('submit', (e) => {
+  /* ========= Abrir / cerrar ========= */
+  toggleBtn.addEventListener('click', () => {
+    const isOpen = chatbotWindow.classList.toggle('open');
+    toggleBtn.classList.toggle('open', isOpen);
+    toggleBtn.textContent = isOpen ? '✖' : '💬';
+  });
+
+  /* ========= Envío ========= */
+  form.addEventListener('submit', async (e) => {
     e.preventDefault();
     const text = input.value.trim();
     if (!text) return;
-    const userMsg = document.createElement('div');
-    userMsg.textContent = text;
-    messages.appendChild(userMsg);
+
+    appendBubble(text, 'user');
     input.value = '';
-    messages.scrollTop = messages.scrollHeight;
+
+    /* ------- Llamada al backend (n8n) ------- */
+    const webhookURL = 'YOUR_N8N_CHATBOT_WEBHOOK';
+    try {
+      const res = await fetch(webhookURL, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ message: text })
+      });
+      const data = await res.json();          // espera { reply: "..." }
+      appendBubble(data.reply || '🤖 …', 'bot');
+    } catch (err) {
+      appendBubble('Ups, no pude responder. Intenta de nuevo.', 'bot');
+      console.error(err);
+    }
   });
+
+  /* ========= Helper ========= */
+  function appendBubble(content, who = 'bot') {
+    const div = document.createElement('div');
+    div.className = `message ${who}`;
+    div.textContent = content;
+    messages.appendChild(div);
+    messages.scrollTop = messages.scrollHeight;
+  }
 });
