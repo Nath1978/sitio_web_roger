@@ -1,0 +1,27 @@
+version: "3.8"
+
+services:
+  n8n:
+    image: n8nio/n8n:1.37.2
+    restart: unless-stopped
+    ports:
+      - "5678:5678"
+    environment:
+      - TZ=America/Costa_Rica
+      - WEBHOOK_URL=https://humane-asp-smart.ngrok-free.app
+      - N8N_HOST=0.0.0.0
+      - N8N_PORT=5678
+      - N8N_PROTOCOL=http
+    volumes:
+      - ./n8n_data:/home/node/.n8n
+
+  ngrok:
+    image: ngrok/ngrok:latest
+    restart: unless-stopped
+    command: >
+      http n8n:5678
+      --domain=humane-asp-smart.ngrok-free.app
+    depends_on:
+      - n8n
+    environment:
+      - NGROK_AUTHTOKEN=${NGROK_AUTHTOKEN}
