@@ -49,6 +49,28 @@
       "typography": "limpia y legible"
     }
   },
+  "initialSetup": {
+    "structure": [
+      "project-context/arquitectura_web.md",
+      "project-context/feedback_sitedots.md",
+      "project-context/contexto_general.md",
+      "src/index.html",
+      "src/style.css",
+      "src/scripts.js",
+      "assets/",
+      "tools/",
+      "design/",
+      "assistant_context.json",
+      ".gitignore",
+      "README.md"
+    ],
+    "templates": {
+      "src/index.html": "<!DOCTYPE html>\n<html lang=\"es\">\n<head>\n  <meta charset=\"UTF-8\" />\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n  <title>Inicio - Roger</title>\n  <link rel=\"stylesheet\" href=\"style.css\" />\n</head>\n<body>\n  <h1>Bienvenido al sitio de Roger</h1>\n  <p>Este sitio está en construcción.</p>\n</body>\n</html>",
+      "src/style.css": "body {\n  background-color: #f0f5f0;\n  color: #333;\n  font-family: sans-serif;\n  margin: 2em;\n}",
+      ".gitignore": "node_modules/\n.vscode/\n.env\n*.log",
+      "assistant_context.json": "{\n  \\\"project\\\": \\\"sitio_web_roger\\\",\n  \\\"type\\\": \\\"sitio_web_basico\\\",\n  \\\"stack\\\": [\\\"HTML\\\", \\\"CSS\\\", \\\"JavaScript\\\"],\n  \\\"git\\\": true,\n  \\\"siteDots\\\": true,\n  \\\"owner\\\": \\\"Nathy José Williams\\\",\n  \\\"intent\\\": \\\"Desarrollar sitio minimalista para Roger con retroalimentación visual y colaboración AI-humana\\\"\n}"
+    }
+  },
   "pendingTasks": [
     "Reemplazar imágenes de placeholder",
     "Completar contenido final",
