@@ -124,6 +124,16 @@ pytest
 
 Para registrar las consultas del formulario en una hoja de cálculo, crea un flujo en n8n con un nodo **Webhook** y otro de **Google Sheets**. Usa la URL pública generada por el Webhook como valor de la constante `n8nWebhookURL` en `docs/scripts.js`.
 
+### Docker-compose rápido para n8n
+
+El repositorio incluye un `docker-compose.yml` para levantar n8n junto con un
+túnel de Ngrok. Sigue estos pasos:
+
+1. Copia `.env.example` a `.env` y coloca tu `NGROK_AUTHTOKEN`.
+2. Ejecuta `docker compose up -d` para iniciar los contenedores.
+3. Abre la UI local en [http://localhost:5678](http://localhost:5678) o la URL
+   pública mostrada por Ngrok.
+
 ---
 
 ## 💬 Retroalimentación con SiteDots
