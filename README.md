@@ -8,10 +8,11 @@ Este proyecto tiene como objetivo desarrollar un sitio web ecológico, elegante 
 
 - HTML + CSS + JavaScript
 - Visual Studio Code + Continue (copiloto AI)
+- **OpenAI Codex** para generación de código asistida por IA
 - Git y GitHub (control de versiones)
 - SiteDots (retroalimentación visual y colaborativa)
 - PowerShell / Terminal para automatización local
-- Google Sheets y n8n para integraciones futuras
+- Google Sheets, n8n y Docker Compose con Ngrok para integraciones
 
 ---
 
@@ -119,6 +120,16 @@ Para instalar las dependencias del proyecto y ejecutar las pruebas automáticas,
 pip install -r requirements.txt
 pytest
 ```
+
+## 🚀 Activación del Sitio Web
+
+A continuación se muestra el flujo básico para ver el sitio de forma local:
+
+1. Clona este repositorio en tu máquina.
+2. Instala las dependencias con `pip install -r requirements.txt`.
+3. Desde la carpeta `docs`, ejecuta `python -m http.server 8000`.
+4. Abre <http://localhost:8000> en tu navegador para ver el sitio en acción.
+5. (Opcional) Ejecuta `docker compose up -d` si deseas probar el flujo de contacto vía n8n y Ngrok.
 
 ## ✉️ Envío del formulario a Google Sheets con n8n
 

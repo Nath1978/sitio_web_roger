@@ -34,3 +34,9 @@ def test_assets_exist(html_file):
             missing.append(href)
 
     assert not missing, f"Missing files referenced in {os.path.basename(html_file)}: {missing}"
+
+def test_required_scripts_present():
+    required = ["scripts.js", "chatbot.js"]
+    for script in required:
+        path = os.path.join(DOCS_DIR, script)
+        assert os.path.exists(path), f"Required script {script} is missing"
