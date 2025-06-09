@@ -7,7 +7,7 @@ Este proyecto tiene como objetivo desarrollar un sitio web ecológico, elegante 
 ## 🔧 Tecnologías y Herramientas
 
 - HTML + CSS + JavaScript
-- Visual Studio Code + Continue (copiloto AI)
+- Visual Studio Code + Cline (copiloto AI)
 - **OpenAI Codex** para generación de código asistida por IA
 - Git y GitHub (control de versiones)
 - SiteDots (retroalimentación visual y colaborativa)
