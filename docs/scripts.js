@@ -13,13 +13,20 @@ if (formSection) {
     e.preventDefault();
 
     const formData = new FormData(formSection);
+    const data = Object.fromEntries(formData.entries());
 
     try {
-      await fetch(n8nWebhookURL, {
+      const response = await fetch(n8nWebhookURL, {
         method: 'POST',
-        body: formData,
-        mode: 'no-cors',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
       });
+
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
 
       formSection.reset();
       alert('¡Mensaje enviado exitosamente!');
