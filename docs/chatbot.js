@@ -39,7 +39,14 @@ document.addEventListener('DOMContentLoaded', () => {
     input.value = '';
 
     /* ------- Llamada al backend (n8n) ------- */
-    const webhookURL = 'YOUR_N8N_CHATBOT_WEBHOOK';
+    const webhookURL =
+      window.n8nChatbotWebhookURL ||
+      document.body.dataset.chatbotWebhookUrl;
+    if (!webhookURL) {
+      console.warn('n8nChatbotWebhookURL no configurado para chatbot');
+      appendBubble('Configuración faltante. Intenta más tarde.', 'bot');
+      return;
+    }
     try {
       const res = await fetch(webhookURL, {
         method: 'POST',

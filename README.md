@@ -54,7 +54,21 @@ A continuación se muestra el flujo básico para ver el sitio de forma local:
 
 ## ✉️ Envío del formulario a Google Sheets con n8n
 
-Para registrar las consultas del formulario en una hoja de cálculo, crea un flujo en n8n con un nodo **Webhook** y otro de **Google Sheets**. Usa la URL pública generada por el Webhook como valor de la constante `n8nWebhookURL` en `docs/scripts.js`.
+Para registrar las consultas del formulario en una hoja de cálculo, crea un flujo en n8n con un nodo **Webhook** y otro de **Google Sheets**. Usa la URL pública generada por el Webhook como valor para una variable global `n8nWebhookURL` o un atributo `data-webhook-url` en el formulario.
+
+Ejemplo de configuración:
+
+```html
+<!-- Opción A: variable global -->
+<script>
+  window.n8nWebhookURL = 'https://TU_WEBHOOK_URL/webhook-test/roger-contacto';
+</script>
+
+<!-- Opción B: atributo data en el formulario -->
+<form id="mi-form" data-webhook-url="https://TU_WEBHOOK_URL/webhook-test/roger-contacto">
+  ...
+</form>
+```
 
 ### Docker-compose rápido para n8n
 
@@ -65,6 +79,24 @@ túnel de Ngrok. Sigue estos pasos:
 2. Ejecuta `docker compose up -d` para iniciar los contenedores.
 3. Abre la UI local en [http://localhost:5678](http://localhost:5678) o la URL
    pública mostrada por Ngrok.
+
+## 🤖 Configuración del Chatbot
+
+El archivo `docs/chatbot.js` envía mensajes a un webhook de n8n. Define la URL
+mediante una variable global `n8nChatbotWebhookURL` o con el atributo
+`data-chatbot-webhook-url` en la etiqueta `<body>`.
+
+```html
+<!-- Variable global -->
+<script>
+  window.n8nChatbotWebhookURL = 'https://TU_WEBHOOK_URL/webhook-test/chatbot';
+</script>
+
+<!-- Atributo data en el body -->
+<body data-chatbot-webhook-url="https://TU_WEBHOOK_URL/webhook-test/chatbot">
+  ...
+</body>
+```
 
 ---
 
@@ -82,3 +114,22 @@ túnel de Ngrok. Sigue estos pasos:
 5. Todos los comentarios se guardan con contexto visual.
 
 > Más detalles en: `project-context/feedback_sitedots.md`
+
+## 📈 KPIs
+
+Consulta los indicadores clave de desempeño en la hoja de Google Sheets
+[KPIs\_IA\_Web](https://docs.google.com/spreadsheets/d/REPLACE_ME).
+
+## 🖼️ Manejo de Imágenes
+
+Para evitar problemas al subir archivos `.png`, describe cada imagen deseada con
+un breve *prompt* en lenguaje natural. Genera la ilustración externamente y
+vincúlala solo cuando sea necesario.
+
+### Logo e imágenes finales
+
+Guarda el logotipo definitivo en `docs/assets/` reemplazando `logo-placeholder.svg`.
+Mientras se genera la versión final, crea un archivo `logo-final.md` en el mismo
+directorio con una descripción en texto del diseño esperado. Cada imagen que se
+agregue a `docs/assets/` debe ir acompañada de un archivo `.md` con el mismo
+nombre base que explique en lenguaje natural su contenido y propósito.
