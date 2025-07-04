@@ -1,6 +1,6 @@
 # Checklist de Progreso
 
-- [ ] Configurar URL real del webhook en `docs/scripts.js`
+- [x] Configurar URL real del webhook en `docs/scripts.js`
 - [ ] Reemplazar imágenes placeholder
 - [ ] Completar contenido final en todas las páginas
 - [ ] Conectar el chatbot con un backend real

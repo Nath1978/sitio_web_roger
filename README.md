@@ -54,7 +54,21 @@ A continuación se muestra el flujo básico para ver el sitio de forma local:
 
 ## ✉️ Envío del formulario a Google Sheets con n8n
 
-Para registrar las consultas del formulario en una hoja de cálculo, crea un flujo en n8n con un nodo **Webhook** y otro de **Google Sheets**. Usa la URL pública generada por el Webhook como valor de la constante `n8nWebhookURL` en `docs/scripts.js`.
+Para registrar las consultas del formulario en una hoja de cálculo, crea un flujo en n8n con un nodo **Webhook** y otro de **Google Sheets**. Usa la URL pública generada por el Webhook como valor para una variable global `n8nWebhookURL` o un atributo `data-webhook-url` en el formulario.
+
+Ejemplo de configuración:
+
+```html
+<!-- Opción A: variable global -->
+<script>
+  window.n8nWebhookURL = 'https://TU_WEBHOOK_URL/webhook-test/roger-contacto';
+</script>
+
+<!-- Opción B: atributo data en el formulario -->
+<form id="mi-form" data-webhook-url="https://TU_WEBHOOK_URL/webhook-test/roger-contacto">
+  ...
+</form>
+```
 
 ### Docker-compose rápido para n8n
 
