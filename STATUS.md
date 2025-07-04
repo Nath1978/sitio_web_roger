@@ -13,3 +13,4 @@
 - Inicialización del archivo `STATUS.md`.
 - Se añadió sección de KPIs en README con enlace a Google Sheets.
 - Se documentó la configuración del chatbot y se habilitó el uso de un webhook configurable.
+- Se agregó `n8n_data/` al `.gitignore` para evitar subir flujos personales.
