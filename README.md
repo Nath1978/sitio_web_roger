@@ -125,3 +125,11 @@ Consulta los indicadores clave de desempeño en la hoja de Google Sheets
 Para evitar problemas al subir archivos `.png`, describe cada imagen deseada con
 un breve *prompt* en lenguaje natural. Genera la ilustración externamente y
 vincúlala solo cuando sea necesario.
+
+### Logo e imágenes finales
+
+Guarda el logotipo definitivo en `docs/assets/` reemplazando `logo-placeholder.svg`.
+Mientras se genera la versión final, crea un archivo `logo-final.md` en el mismo
+directorio con una descripción en texto del diseño esperado. Cada imagen que se
+agregue a `docs/assets/` debe ir acompañada de un archivo `.md` con el mismo
+nombre base que explique en lenguaje natural su contenido y propósito.
