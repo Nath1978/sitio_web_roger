@@ -80,6 +80,24 @@ túnel de Ngrok. Sigue estos pasos:
 3. Abre la UI local en [http://localhost:5678](http://localhost:5678) o la URL
    pública mostrada por Ngrok.
 
+## 🤖 Configuración del Chatbot
+
+El archivo `docs/chatbot.js` envía mensajes a un webhook de n8n. Define la URL
+mediante una variable global `n8nChatbotWebhookURL` o con el atributo
+`data-chatbot-webhook-url` en la etiqueta `<body>`.
+
+```html
+<!-- Variable global -->
+<script>
+  window.n8nChatbotWebhookURL = 'https://TU_WEBHOOK_URL/webhook-test/chatbot';
+</script>
+
+<!-- Atributo data en el body -->
+<body data-chatbot-webhook-url="https://TU_WEBHOOK_URL/webhook-test/chatbot">
+  ...
+</body>
+```
+
 ---
 
 ## 💬 Retroalimentación con SiteDots
