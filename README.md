@@ -119,3 +119,9 @@ mediante una variable global `n8nChatbotWebhookURL` o con el atributo
 
 Consulta los indicadores clave de desempeño en la hoja de Google Sheets
 [KPIs\_IA\_Web](https://docs.google.com/spreadsheets/d/REPLACE_ME).
+
+## 🖼️ Manejo de Imágenes
+
+Para evitar problemas al subir archivos `.png`, describe cada imagen deseada con
+un breve *prompt* en lenguaje natural. Genera la ilustración externamente y
+vincúlala solo cuando sea necesario.
