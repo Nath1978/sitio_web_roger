@@ -1,5 +1,3 @@
-version: "3.8"
-
 services:
   n8n:
     image: n8nio/n8n:1.37.2
@@ -21,7 +19,13 @@ services:
     command: >
       http n8n:5678
       --domain=humane-asp-smart.ngrok-free.app
+      --config /etc/ngrok.yml
+    volumes:
+      - ./ngrok.yml:/etc/ngrok.yml:ro
     depends_on:
       - n8n
+    # The NGROK_AUTHTOKEN from .env might be overridden by shell or not picked up.
+    # The --config flag should make ngrok use the token from ngrok.yml directly.
+    # We can leave the environment variable here; --config might take precedence.
     environment:
       - NGROK_AUTHTOKEN=${NGROK_AUTHTOKEN}
