@@ -82,3 +82,8 @@ túnel de Ngrok. Sigue estos pasos:
 5. Todos los comentarios se guardan con contexto visual.
 
 > Más detalles en: `project-context/feedback_sitedots.md`
+
+## 📈 KPIs
+
+Consulta los indicadores clave de desempeño en la hoja de Google Sheets
+[KPIs\_IA\_Web](https://docs.google.com/spreadsheets/d/REPLACE_ME).
